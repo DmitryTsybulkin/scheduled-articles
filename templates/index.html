@@ -8,5 +8,20 @@
     <p>
         Hello, world!
     </p>
+
+    <form action="{{ url_for('parse') }}" method="post">
+        <!-- <input type="text" name="tags"> -->
+        <select multiple name="tags[]">
+            <option value="quantum theory">Квантовая теория</option>
+            <option value="microbiology">Микробиология</option>
+            <option value="biology">Биология</option>
+            <option value="bioengineering">Биоинженерия</option>
+        </select>
+        <br>
+        <input type="email" name="email">
+        <br>
+        <input type="submit" value="Share">
+    </form>
+
 </body>
 </html>
