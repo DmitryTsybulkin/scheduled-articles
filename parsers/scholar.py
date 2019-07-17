@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 import calendar
 import datetime
+import time
 
 class Scholar(object):
 	# URL https://scholar.google.ru/scholar?scisbd=2&q=quantum+theory&hl=en&as_sdt=0,5
@@ -40,17 +41,17 @@ class Scholar(object):
 		print('Parser start')
 		while run:
 			page = requests.get(self.getURL(numberPage))
-			print("===== HTML PAGE =====")
-			print(page)
+			# print("===== HTML PAGE =====")
+			# print(page)
 			
 			soup = BeautifulSoup(page.text, 'html.parser')
-			print("===== BS4 HTML =====")
-			print(soup)
+			# print("===== BS4 HTML =====")
+			# print(soup)
 
 			articles = soup.find_all('div', class_='gs_ri')
-			print("===== ARTICLES =====")
-			print(articles)
-			break
+			# print("===== ARTICLES =====")
+			# print(articles)
+			# break
 
 			result = []
 			for article in articles:
@@ -74,12 +75,13 @@ class Scholar(object):
 				# listArticles.append({'titleArticle': titleArticle, 'href': href})
 				result.append({'titleArticle': titleArticle, 'href': href})
 			
-			# print('=================================================================================')
-			# print('Page number ' + str(numberPage))
-			# print(result)
+			print('=================================================================================')
+			print('Page number ' + str(numberPage))
+			print(result)
 			result = []
 
 			numberPage += 1
+			time.sleep(3)
 
 		return listArticles
 		# page = requests.get(self.getURL(1))
