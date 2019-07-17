@@ -9,9 +9,6 @@ def index():
 
 @app.route('/parse', methods=['POST'])
 def parse():
-   # print('Get parse request.\nData:')
-   # print(request.form.getlist('tags[]'))
-   # print(request.form['email'])
    sch = Scholar(request.form.getlist('tags[]'))
-   print(sch.parsing())
+   sch.parsing()
    return redirect(url_for('index'))

@@ -12,13 +12,13 @@
     <form action="{{ url_for('parse') }}" method="post">
         <!-- <input type="text" name="tags"> -->
         <select multiple name="tags[]">
-            <option value="quantum theory">Квантовая теория</option>
+            <option value="quantum theory" selected>Квантовая теория</option>
             <option value="microbiology">Микробиология</option>
             <option value="biology">Биология</option>
             <option value="bioengineering">Биоинженерия</option>
         </select>
         <br>
-        <input type="email" name="email">
+        <input type="email" name="email" value="saske.97.97@mail.ru">
         <br>
         <input type="submit" value="Share">
     </form>
