@@ -11,6 +11,4 @@ https://github.com/ckreibich/scholar.py
 
 От Валерия:
 
-Привет! Если будет время, то загляни ко мне в 8-221. Обсудим. Например, в Scopus есть "Оповещения" https://www.scopus.com/alert/form/MyAlerts.uri?zone=TopNavBar&origin=resultslist. В WoS есть "Поисковые запросы и оповещения" http://apps.webofknowledge.com/WOS_GeneralSearch_input.do?product=WOS&search_mode=GeneralSearch&SID=C3Sjilyd5AggIS3l3OQ&preferencesSaved= .
-
-У ПГУ есть подписка на Scopus и WoS. Нужно зайти с ip адресов ПГУ.
+Например, в Scopus есть "Оповещения" https://www.scopus.com/alert/form/MyAlerts.uri?zone=TopNavBar&origin=resultslist. В WoS есть "Поисковые запросы и оповещения" http://apps.webofknowledge.com/WOS_GeneralSearch_input.do?product=WOS&search_mode=GeneralSearch&SID=C3Sjilyd5AggIS3l3OQ&preferencesSaved= .
